@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inicio · BookApp</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- MENÚ SUPERIOR -->
+  <nav class="top-menu">
+    <a href="index.html" class="active">INICIO</a>
+    <a href="biblioteca.html">BIBLIOTECA</a>
+    <a href="estanterias.html">ESTANTERÍAS</a>
+    <a href="estadisticas.html">ESTADÍSTICAS</a>
+    <a href="amigos.html">AMIGOS</a>
+    <i class="fa-solid fa-user user-icon"></i>
+  </nav>
+
+  <!-- DASHBOARD -->
+  <main id="app" class="dashboard">
+
+    <section class="dashboard-columns">
+
+      <!-- COLUMNA IZQUIERDA -->
+      <div class="column-left">
+
+        <!-- LECTURAS ACTUALES -->
+        <section class="card block current-reads">
+          <div class="card-header">
+            <h2>Lecturas actuales</h2>
+          </div>
+          <div id="current-reads-list" class="current-reads-list">
+            <!-- Se rellena desde app.js -->
+          </div>
+        </section>
+
+        <!-- RETO LECTOR -->
+        <section class="card block reading-challenge">
+          <div class="card-header">
+            <h2>Reto lector</h2>
+          </div>
+          <div id="reading-challenge-content" class="reading-challenge-content">
+            <!-- Se rellena desde app.js -->
+          </div>
+        </section>
+
+      </div>
+
+      <!-- COLUMNA DERECHA -->
+      <div class="column-right">
+
+        <!-- ACTUALIZACIONES -->
+        <section class="card block updates">
+          <div class="card-header">
+            <h2>Actualizaciones</h2>
+          </div>
+          <div id="updates-list" class="updates-list">
+            <!-- Se rellena desde app.js -->
+          </div>
+        </section>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Supabase + JS -->
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
