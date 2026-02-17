@@ -1,4 +1,4 @@
-// Reutilizamos la instancia de Supabase creada en app.js
+// Usamos la instancia global creada en app.js
 const supabase = window.supabase;
 
 // Si ya hay sesión → ir al dashboard
