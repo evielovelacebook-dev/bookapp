@@ -1,8 +1,5 @@
+// Reutilizamos la instancia de Supabase creada en app.js
 const supabase = window.supabase;
-const SUPABASE_URL = 'https://tlmumyswspfyswqnyssz.supabase.co';
-const SUPABASE_ANON_KEY = 'sb_publishable_4MxsDe4SXkHa-Cq2WboYyg_kaYfT6x7';
-
-const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // Si ya hay sesión → ir al dashboard
 supabase.auth.getSession().then(({ data }) => {
@@ -66,4 +63,3 @@ document.getElementById("register-form").addEventListener("submit", async (e) =>
     document.getElementById("auth-error").textContent = "Cuenta creada. Revisa tu correo.";
   }
 });
-
