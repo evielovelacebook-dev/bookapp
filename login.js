@@ -1,3 +1,4 @@
+const supabase = window.supabase;
 const SUPABASE_URL = 'https://tlmumyswspfyswqnyssz.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable_4MxsDe4SXkHa-Cq2WboYyg_kaYfT6x7';
 
@@ -65,3 +66,4 @@ document.getElementById("register-form").addEventListener("submit", async (e) =>
     document.getElementById("auth-error").textContent = "Cuenta creada. Revisa tu correo.";
   }
 });
+
